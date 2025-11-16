@@ -27,6 +27,7 @@ Joblib – model persistence
 Streamlit – web app interface
 
 📂 Project Structure
+```bash
 GenreGennie/
 │── data/                 # Dataset (genres_original)
 │── models/               # Saved model (genre_classifier.pkl)
@@ -34,19 +35,23 @@ GenreGennie/
 │── predict.py            # Predict genre from audio
 │── app.py                # Streamlit web app
 │── genre_features.csv    # Extracted features (auto-generated)
+```
 
 ⚙️ Installation
 # Clone the repository
+```bash
 git clone https://github.com/yourusername/GenreGennie.git
 cd GenreGennie
-
+```
 # Create a virtual environment (optional but recommended)
+```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-
+```
 # Install dependencies
+```
 pip install -r requirements.txt
-
+```
 requirements.txt should include:
 
 librosa
@@ -65,3 +70,7 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 📜 License
 
 This project is licensed under the MIT License.
+
+❤️ Author
+
+Shreya R. Devadiga
