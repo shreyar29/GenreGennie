@@ -1,32 +1,37 @@
-GenreGennie is a machine learning–based music genre classification system that uses audio signal processing to predict the genre of songs. It extracts MFCC (Mel-frequency cepstral coefficients) features from audio files, trains a Random Forest classifier, and provides predictions through an interactive Streamlit web app.
+# 🎵 GenreGennie – Music Genre Classification using ML & Audio Processing
 
-🚀 Features
+**GenreGennie** is a machine learning–powered music genre classification system that analyzes audio files and predicts their genre.  
+It uses **MFCC feature extraction**, a **Random Forest classifier**, and a clean **Streamlit web interface** to deliver fast and accurate predictions.
 
-🎶 Extracts MFCC features using Librosa
+This project demonstrates end-to-end ML development — from preprocessing and model training to deployment.
 
-🧠 Trains a Random Forest classifier on labeled datasets
+---
 
-💾 Saves and loads the trained model with Joblib
+## 🚀 Features
 
-🎧 Interactive Streamlit app for genre prediction
+- 🎶 **Automatic MFCC feature extraction** using Librosa  
+- 🧠 **Random Forest classifier** trained on labeled audio datasets  
+- 💾 **Model saving & loading** with Joblib  
+- 🎧 **Streamlit-based interactive web app** for genre prediction  
+- 📊 **Complete ML pipeline** → preprocessing → feature extraction → training → prediction  
+- 🧱 Modular & easy-to-extend project structure  
 
-📊 End-to-end pipeline: preprocessing → training → prediction → deployment
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Python
+- **Python 3.8+**
+- **Librosa** – Audio feature extraction  
+- **NumPy, Pandas** – Data processing  
+- **Matplotlib** – Visualization  
+- **Scikit-learn** – Machine Learning  
+- **Joblib** – Model persistence  
+- **Streamlit** – Web app interface  
 
-Librosa – audio feature extraction
+---
 
-NumPy, Pandas, Matplotlib – data handling and visualization
+## 📂 Project Structure
 
-Scikit-learn – machine learning
-
-Joblib – model persistence
-
-Streamlit – web app interface
-
-📂 Project Structure
 ```bash
 GenreGennie/
 │── data/                 # Dataset (genres_original)
@@ -53,7 +58,7 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 requirements.txt should include:
-
+```
 librosa
 numpy
 pandas
@@ -62,15 +67,43 @@ joblib
 streamlit
 tqdm
 matplotlib
+```
+▶️ Running the Application
 
+
+🧠 Train the model
+```
+python train.py
+```
+🎵 Predict genre from an audio file
+```
+python predict.py path/to/audiofile.wav
+```
+🌐 Launch the Streamlit Web App
+```
+streamlit run app.py
+```
 🤝 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to add.
+Contributions are welcome!
+If you’d like to add new features or improve existing ones:
+
+Fork the repo
+
+Create a new branch
+
+Make your changes
+
+Submit a pull request
+
+For major changes, please open an issue first to discuss them.
 
 📜 License
 
 This project is licensed under the MIT License.
+You are free to use, modify, and distribute this software with attribution.
 
 ❤️ Author
 
-Shreya R. Devadiga
+Shreya R
+
